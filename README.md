@@ -1,9 +1,5 @@
 ## 一、效果预览
 
-1. PC 端
-
-2. 移动端
-
 ## 二、技术栈
 
 1. web 端使用 Vue3+element-plus UI
@@ -14,12 +10,11 @@
 1. 新建 Vue3 项目
 2. 清除无关的新手引导代码
 3. 安装 vue-router 4
-4. 安装 vue-router
-5. 安装 three.js
-6. 新建 src/views/home/index.vue 为主页
-7. 新建 src/layout/index.vue layout 主页
-8. 新建 src/layout/components/Menu 组件
-9. 新建 src/layout/components/Robot3d 组件
+4. 安装 three.js
+5. 新建 src/views/home/index.vue 为主页
+6. 新建 src/layout/index.vue layout 主页
+7. 新建 src/layout/components/Menu 组件
+8. 新建 src/layout/components/Robot3d 组件
 
 ## 三、核心代码
 
@@ -32,7 +27,7 @@
 - 最终渲染生成力臂
 
 3. 其中的 setRobotRotation 方法对外提供角度控制
-4. 其中的 setControlsEnabled 方法对外提供视角开个控制
+4. 其中的 setControlsEnabled 方法对外提供视角开关控制
 
 ```js
 // 文件路径：src/views/home/components/Robot3d/manager/BaseManager.js
@@ -378,7 +373,7 @@ export default class baseManager {
 8. home/components/Menu/index.vue 实现控制界面
 
 ```html
-// 路径：src/views/home/components/Menu
+// 路径：src/views/home/components/Menu/index.vue
 <template>
   <el-scrollbar height="100%">
     <div class="slider-block">
@@ -590,9 +585,9 @@ export default class baseManager {
 ## 四、源码地址
 
 ```txt
-
+https://github.com/jiangzetian/vue3-robot
 ```
 
 ## 五、视频预览
 
-1. 点击阅读原文即可
+1. [点击此处即可预览](https://www.bilibili.com/video/BV1yb4y1p734/)
